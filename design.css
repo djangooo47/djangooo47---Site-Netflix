@@ -1,0 +1,101 @@
+body{ 
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #b13737;
+opacity: 0.8;
+   }
+
+   /* début de la barre de navigation */
+nav{ 
+/* aligner les éléments  */
+display: flex;
+/* passe a la ligne lorsque la résolution de l utilisateur n est pas assez grande  */
+flex-wrap: wrap;
+/* space-between met un écart entre les boites de nos div  */
+justify-content: space-between;
+background-color: rgb(0, 0, 0);
+color: #fff;
+padding: 0  25px;
+
+}
+
+/* gestion du style de la div class gauche qui se mentionne avec un point en css ex: .gauche */
+nav .gauche{ 
+   display: flex;
+   flex-wrap: wrap;
+   }
+
+   /* gestion du logo netflix présent dans la nav */
+   nav .gauche img{ 
+   padding-top: 5px;
+      }
+
+      /* gestion des onglets de la div gauche présent dans la nav */
+      nav .gauche .onglets{ 
+         display: flex;
+         flex-wrap: wrap;
+         /* permet de mettre un espace ou marge à gauche des onglets présent dans la nav donc ici d espacer le logo netflix des onglets */
+         margin-left: 100px;
+         margin-top: -45px;
+            }
+
+            nav .gauche .onglets p{ 
+             margin-left: 10px;
+             cursor: pointer;
+             color: #909191;
+                  }
+
+            /* hover pour que quand l utilisateur passe le curseur sur un onglet il saffiche en blanc */      
+                  nav .gauche .onglets p:hover{ 
+                     color: #fff;
+                          }
+
+                          nav .droite{ 
+                        display: flex;
+                        flex-wrap: wrap;
+                                }
+
+                                nav .droite p{ 
+                               margin-right: 10px;
+                               cursor: pointer;
+                                         }
+
+/* fin de la barre de navigation */
+
+/* balise permettant d ajuster tout le contenue dans les films et les séries */
+/* Les films et séries */
+.films-et-séries{ 
+ background-color: #191a1a;
+ padding: 25px;
+}
+/* balise permettant d ajuster tout le contenue dans section */
+.films-et-séries .section{ 
+   margin-bottom: 55px;
+ }
+
+ .films-et-séries .section h2{ 
+color: #fff;
+ }
+ 
+ /* balise permettant de s'occuper du contenue dans list pour voirs les images des films défiler */
+ .films-et-séries .section .list{ 
+   display: flex;
+  overflow-x: auto;
+    }
+
+    .films-et-séries .section .list{ 
+      display: flex;
+     overflow-x: auto;
+       }
+
+       /* balise permettant de s'occuper des liens d images de la list */
+       .films-et-séries .section .list a{ 
+         padding-left: 5px;
+         transition: transform 0.25;
+         }
+
+         .films-et-séries .section .list a:hover{ 
+            transform: scale(1.05);
+            }
+/* fin des films et séries */
